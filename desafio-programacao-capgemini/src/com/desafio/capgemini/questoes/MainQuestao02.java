@@ -2,6 +2,14 @@ package com.desafio.capgemini.questoes;
 
 import java.util.Scanner;
 
+/**
+ * Classe Main onde é executado a questão 02 do Desafio. O programa recebe uma
+ * string senha para verificar quantos caracteres faltam para atingir tamanho de
+ * no mínimo 6. Também é verificado se atinge os requisitos de senha forte.
+ *
+ * @author Thamyris G Thurler
+ *
+ */
 public class MainQuestao02 {
 
 	public static void main(String[] args) {
@@ -12,6 +20,14 @@ public class MainQuestao02 {
 
 	}
 
+	/**
+	 * Método que recebe a entrada do valor da string.
+	 * 
+	 * @param String  msg - String que determina a mensagem para o usuário.
+	 * @param Scanner scan - Para receber resposta do usuário.
+	 * @return String - String que representa a senha.
+	 */
+
 	public static String leInformacao(String msg, Scanner scan) {
 
 		System.out.println(msg);
@@ -20,6 +36,13 @@ public class MainQuestao02 {
 		return entrada;
 	}
 
+	/**
+	 * Método para verificar a senha.
+	 * 
+	 * @param String senha - Representa a senha.
+	 * @return int - Representa , se existir, quantidade de caracteres que faltam
+	 *         para atingir tamanho mínimo de 6. Caso contrário retorna 0.
+	 */
 	public static int verificaSenha(String senha) {
 
 		int x = 0;
