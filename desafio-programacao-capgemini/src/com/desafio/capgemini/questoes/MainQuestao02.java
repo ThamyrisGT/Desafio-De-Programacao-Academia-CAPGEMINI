@@ -20,21 +20,23 @@ public class MainQuestao02 {
 		return entrada;
 	}
 
-	public static void verificaSenha(String senha) {
+	public static int verificaSenha(String senha) {
 
+		int x = 0;
 		String regex = "(?=.*[!@#$%^&*()-+])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}";
 
 		if (senha.length() < 6) {
-			int x = 6 - senha.length();
+			x = 6 - senha.length();
 			System.out.println("Adicione pelo menos mais " + x + " caracteres");
+			return x;
 		} else {
 			if (senha.matches(regex) && !senha.contains(" ")) {
-				System.out.println("Sua senha é forte");
+				System.out.println("Sua senha contém ao menos 6 caracteres e é forte");
 			} else {
-				System.out.println("Sua senha é fraca");
+				System.out.println("Sua senha contém ao menos 6 caracteres, porém ela é fraca");
 			}
-
 		}
+		return 0;
 	}
 
 }

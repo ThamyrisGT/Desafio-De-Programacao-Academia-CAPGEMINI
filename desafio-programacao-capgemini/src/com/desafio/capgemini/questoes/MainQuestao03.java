@@ -22,7 +22,7 @@ public class MainQuestao03 {
 		return entrada;
 	}
 
-	public static void pegaQtdDeAnagramas(String palavra) {
+	public static int pegaQtdDeAnagramas(String palavra) {
 
 		ArrayList<String> listaSubstrings = identificaTodasSubstrings(palavra);
 
@@ -41,6 +41,7 @@ public class MainQuestao03 {
 			}
 		}
 		System.out.println("A palavra " + palavra + " contém " + contador + " substrings anagramas");
+		return contador;
 	}
 
 	public static ArrayList<String> identificaTodasSubstrings(String palavra) {

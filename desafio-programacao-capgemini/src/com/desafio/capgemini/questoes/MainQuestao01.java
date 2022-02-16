@@ -37,10 +37,13 @@ public class MainQuestao01 {
 		return num;
 	}
 
-	public static void desenhaEscada(int n) {
+	public static StringBuilder desenhaEscada(int n) {
+		StringBuilder escada = new StringBuilder();
 		for (int i = 0; i < n; i++) {
-			System.out.println(" ".repeat(n - i - 1) + "*".repeat(i + 1));
-	    }
+			escada.append(" ".repeat(n - i - 1) + "*".repeat(i + 1) + "\n");
+		}
+		System.out.println(escada);
+		return escada;
 	}
 
 }
