@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Classe Main onde é executado a questão 01 do Desafio. O programa recebe um
- * inteiro n e imprimi em formato de escada de * de acordo com o tamanho
+ * inteiro n e imprime em formato de escada de * de acordo com o tamanho
  * passado.
  *
  * @author Thamyris G Thurler
