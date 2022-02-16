@@ -2,7 +2,7 @@ package com.desafio.capgemini.questoes;
 
 import java.util.Scanner;
 
-public class Questao02 {
+public class MainQuestao02 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class Questao02 {
 
 	}
 
-	protected static String leInformacao(String msg, Scanner scan) {
+	public static String leInformacao(String msg, Scanner scan) {
 
 		System.out.println(msg);
 		String entrada = scan.nextLine();
@@ -20,7 +20,7 @@ public class Questao02 {
 		return entrada;
 	}
 
-	protected static void verificaSenha(String senha) {
+	public static void verificaSenha(String senha) {
 
 		String regex = "(?=.*[!@#$%^&*()-+])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}";
 

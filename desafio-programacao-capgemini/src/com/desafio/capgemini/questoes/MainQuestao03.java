@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Questao03 {
+public class MainQuestao03 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

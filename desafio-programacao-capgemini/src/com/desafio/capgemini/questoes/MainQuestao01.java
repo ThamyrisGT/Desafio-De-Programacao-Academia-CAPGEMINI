@@ -2,7 +2,7 @@ package com.desafio.capgemini.questoes;
 
 import java.util.Scanner;
 
-public class Questao01 {
+public class MainQuestao01 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class Questao01 {
 
 	}
 
-	protected static int leInformacaoInt(String msg, Scanner scan) {
+	public static int leInformacaoInt(String msg, Scanner scan) {
 
 		boolean entradaValida = false;
 		int num = 0;
@@ -37,7 +37,7 @@ public class Questao01 {
 		return num;
 	}
 
-	protected static void desenhaEscada(int n) {
+	public static void desenhaEscada(int n) {
 		for (int i = 0; i < n; i++) {
 			System.out.println(" ".repeat(n - i - 1) + "*".repeat(i + 1));
 	    }
