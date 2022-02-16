@@ -18,7 +18,7 @@ Cada questão possui uma classe Main onde basta rodar que o programa será execu
 Execute também os testes unitários de cada questão.
 
 # Pré-requisitos
-- Java 8
+- Java 11
 - Qualquer IDE Java
 
 

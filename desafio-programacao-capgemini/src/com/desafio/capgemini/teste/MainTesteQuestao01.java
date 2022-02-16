@@ -23,11 +23,4 @@ public class MainTesteQuestao01 {
                 		+ "\s*****\n"
                 		+ "******\n");
     }
-    
-	@Test
-    @DisplayName("Verifica se a entrada é um número")
-    void precisaRetornarSeEntradaEValida() {
-		Scanner scan = new Scanner(System.in);
-        assertEquals(MainQuestao01.leInformacaoInt("Por favor digite um número", scan),6);
-    }
 }
